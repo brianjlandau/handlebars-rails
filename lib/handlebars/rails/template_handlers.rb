@@ -3,7 +3,7 @@ require 'sprockets'
 
 module Handlebars::Rails
   class HandlebarsTemplate < Tilt::Template
-    self.default_mime_type = 'text/css'
+    self.default_mime_type = 'application/javascript'
 
     def self.engine_initialized?
       defined?(::Handlebars::Template)
